@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="Entenda, em linguagem simples, o que falhou, quem pode ser afetado e como reduzir o risco.">
+  <title>Casos explicados · Outubro Negro / DB1</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../assets/fonts/AdwaitaSans.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/editorial-refresh.css">
+  <script type="module" src="../scripts/main.js"></script>
+  
+</head>
+<body data-page="investigation">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <!-- Cabeçalho compartilhado: marca e links entre as páginas. -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Outubro Negro — início"><img class="brand-mark" src="../assets/outubro-negro.svg" alt=""></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-navigation" aria-label="Abrir navegação">MENU <span aria-hidden="true">＋</span></button>
+      <nav class="main-nav" id="main-navigation" aria-label="Principal"><a href="../index.html">Início</a><a href="../pages/cronologia.html">Linha do tempo</a><a href="../pages/investigacao.html" aria-current="page">Casos explicados</a><a href="../pages/inteligencia-artificial.html">IA e segurança</a><a class="nav-challenge" href="../pages/cyber-challenge.html">Desafio <span aria-hidden="true">↗</span></a></nav>
+    </div>
+  </header>
+  <main id="conteudo">
+    <!-- Casos: glossário, filtros e fichas com resumo simples e detalhes técnicos expansíveis. -->
+<section class="page-hero"><div class="container"><p class="eyebrow" data-enter>01 / OS CASOS EXPLICADOS</p><h1 data-enter>O que falhou<br><em>e por que importa.</em></h1><div class="page-hero-bottom" data-enter><p>Comece pelo resumo em linguagem simples. Abra um caso se quiser ver versões afetadas, identificadores e detalhes técnicos.</p><span class="page-number">16 HISTÓRIAS / 8 ÁREAS DA TECNOLOGIA</span></div></div></section>
+    <section class="content-section"><div class="container"><details class="glossary"><summary>Algumas palavras podem ser novas? Veja um guia rápido.</summary><dl><div><dt>Falha de segurança</dt><dd>Um erro que pode deixar alguém acessar ou alterar algo sem autorização.</dd></div><div><dt>CVE</dt><dd>Um número de identificação usado para encontrar o aviso de uma falha específica.</dd></div><div><dt>CVSS</dt><dd>Uma escala que estima a gravidade técnica. Não diz, por si só, se alguém foi atacado.</dd></div><div><dt>Crítica ou alta gravidade</dt><dd>Uma avaliação do risco possível. Não significa que alguém já invadiu um computador.</dd></div><div><dt>Exploração</dt><dd>Uma tentativa de usar a falha para causar um efeito. Isso não confirma, por si só, que alguém conseguiu invadir.</dd></div><div><dt>Comprometimento</dt><dd>Quando alguém consegue acesso ou controle que não deveria ter.</dd></div><div><dt>Runtime</dt><dd>O programa que permite que outro programa seja executado, como Node.js ou PHP.</dd></div><div><dt>Certificado digital</dt><dd>Uma credencial que ajuda o navegador a conferir com quem está se conectando.</dd></div><div><dt>Cadeia de fornecimento</dt><dd>O conjunto de programas, bibliotecas e atualizações usados para criar um serviço.</dd></div><div><dt>Firmware</dt><dd>O programa básico que vem dentro de um aparelho e o ajuda a iniciar.</dd></div><div><dt>Execução remota de código</dt><dd>Quando uma falha pode permitir que alguém rode instruções em outro computador pela rede.</dd></div></dl></details><form class="filters" id="case-filters" aria-label="Filtrar casos"><div class="filter-field search-field"><label for="case-query">BUSCAR POR NOME OU NÚMERO DA FALHA</label><input type="search" id="case-query" name="query" placeholder="Ex.: Node.js, PHP ou número da falha…"></div><div class="filter-field"><label for="case-category">ÁREA DA TECNOLOGIA</label><select name="category" id="case-category"><option value="all">Todas as áreas</option></select></div><button class="reset-button" type="reset">Limpar busca ↺</button></form><p class="filter-count" id="case-count" role="status" aria-live="polite"></p><div id="case-list"></div><div class="limitation-box"><h2>O que significa “crítica”?</h2><p>É uma avaliação do dano que a falha poderia causar. Uma nota alta não prova que alguém usou a falha para atacar. As escalas também podem variar entre fabricantes.</p><p>As versões aqui indicam atualizações publicadas até 29/10/2026. Para proteger um sistema hoje, consulte a orientação mais recente do fabricante.</p></div></div></section>
+  </main>
+  <!-- Rodapé compartilhado: fontes, páginas principais e volta ao início. -->
+  <footer class="site-footer"><div class="container">
+    <div class="footer-top"><div class="footer-identity"><a class="footer-mark" href="../index.html" aria-label="Outubro Negro — início"><img class="brand-mark" src="../assets/outubro-negro.svg" alt=""></a><p>Um especial editorial<br>sobre segurança digital.</p></div><nav class="footer-links" aria-label="Rodapé"><a href="../pages/fontes.html">Fontes e método</a><a href="../pages/investigacao.html">Casos explicados</a><a href="#conteudo">Voltar ao topo ↑</a></nav></div>
+    <div class="footer-bottom"><span>OUTUBRO NEGRO / ESPECIAL EDITORIAL / 2026</span><span>FONTES CONSULTADAS EM 29.10.2026 · HORÁRIO DE REFERÊNCIA: BRASÍLIA</span></div>
+  </div></footer>
+  <noscript><div class="container limitation-box"><p>Ative o JavaScript para carregar os dossiês, os filtros e o desafio. As seções editoriais continuam disponíveis. Consulte também os avisos oficiais de <a class="source-link" href="https://nodejs.org/en/blog/vulnerability/october-2026-security-releases">Node.js</a>, <a class="source-link" href="https://www.php.net/">PHP</a> e <a class="source-link" href="https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/">GitLab</a>.</p></div></noscript>
+</body>
+</html>

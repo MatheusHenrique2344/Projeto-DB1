@@ -1,0 +1,8 @@
+{
+  "name": "outubro-negro-db1",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Especial editorial sobre segurança em outubro de 2026.",
+  "scripts": { "start": "node scripts/serve.mjs", "check": "node scripts/check.mjs" }
+}

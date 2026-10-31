@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>Outubro Negro — segurança digital</title>
+  <circle cx="32" cy="32" r="30" fill="#E6EFE8"/>
+  <path d="M25 16a7 7 0 0 1 14 0v3H25v-3Z" fill="#276D60"/>
+  <rect x="20" y="18" width="24" height="30" rx="12" fill="#276D60"/>
+  <path d="M25 18 20 12M39 18l5-6M20 25h-7l-4-4M20 31h-9M20 38h-7l-4 4M44 25h7l4-4M44 31h9M44 38h7l4 4" stroke="#276D60" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 25v14" stroke="#FFFEFA" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="32" cy="32" r="3.5" fill="#D5755D"/>
+</svg>

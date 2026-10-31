@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Outubro Negro</title>
+  <desc id="desc">Escudo de segurança observado por uma lupa.</desc>
+  <circle cx="32" cy="32" r="30" fill="#E6EFE8"/>
+  <path d="M31.8 9.5 49 16v12.8c0 10.5-6.5 19.2-17.2 25.5-10.7-6.3-17.2-15-17.2-25.5V16l17.2-6.5Z" fill="#276D60"/>
+  <path d="m23.5 29.8 6 5.8 11-12" stroke="#FFFEFA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="43" cy="38" r="9" fill="#FFFEFA" stroke="#D5755D" stroke-width="3"/>
+  <path d="m49.5 44.5 6 6" stroke="#D5755D" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M39.5 38h7" stroke="#276D60" stroke-width="2" stroke-linecap="round"/>
+</svg>
