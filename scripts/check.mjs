@@ -23,7 +23,7 @@ for (const source of sources) {
   check(source.date <= verifiedAt, `Fonte posterior à verificação: ${source.id}`);
 }
 for (const item of cases) {
-  check(item.date >= '2026-10-01' && item.date <= verifiedAt, `Data fora do recorte: ${item.id}`);
+  check(item.date >= '2026-10-01' && item.date <= '2026-10-31', `Data fora do recorte de outubro: ${item.id}`);
   check(Boolean(categories[item.category]), `Categoria inexistente: ${item.id}`);
   check(item.sources.length > 0 && item.sources.every(id => sourceIds.has(id)), `Referências inválidas: ${item.id}`);
   check([item.summary, item.affected, item.fixed, item.action, item.limit].every(Boolean), `Ficha incompleta: ${item.id}`);
@@ -34,6 +34,8 @@ for (const event of timeline) {
 }
 check(cases.find(item => item.id === 'node').severity === 'Alta', 'Preservar a classificação oficial do Node.js');
 check(timeline.some(event => event.evidence === 'Atribuição retratada'), 'Preservar a retratação');
+check(cases.find(item => item.id === 'binance')?.cves.length === 0, 'Binance não deve ser apresentado como um CVE');
+check(!cases.some(item => item.id === 'serpro'), 'Serpro deve permanecer como tentativa mitigada, não como dossiê de vulnerabilidade');
 
 // Filtros: combinação, fronteiras inclusivas, busca e ausência de resultados.
 const fixture = [

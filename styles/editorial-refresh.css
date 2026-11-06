@@ -191,7 +191,11 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,s
 .method-card { border-color:var(--line); background:#fffefa; border-radius:18px; padding:22px; }
 .method-card h2,.source-heading h2 { font-family:var(--serif); font-weight:500; }
 .method-card h2 { font-size:25px; }
+.method-card h3 { margin-top:12px; font-family:var(--serif); font-size:25px; font-weight:500; }
 .method-card p { font-size:15px; line-height:1.75; }
+.method-card .text-link,.method-card .source-row { margin-top:18px; }
+.comparison-block { margin-top:48px; margin-bottom:28px; }
+.comparison-block>h2 { max-width:760px; margin:8px 0 24px; }
 .source-item { border-color:var(--line); }
 .source-item h3 { font-family:var(--serif); font-size:23px; font-weight:500; }
 .source-item h3 a>span:not(.sr-only) { color:#d5755d; }

@@ -54,11 +54,11 @@ function caseCard(item, index) {
 
 // Destaques e quatro marcos resumidos aparecem somente na página inicial.
 const featured = document.querySelector('#featured-cases');
-if (featured) featured.innerHTML = ['node', 'php', 'gitlab', 'nginx'].map((id, index) => caseCard(cases.find(item => item.id === id), index)).join('');
+if (featured) featured.innerHTML = ['node', 'php', 'gitlab', 'binance'].map((id, index) => caseCard(cases.find(item => item.id === id), index)).join('');
 
 const miniTimeline = document.querySelector('#mini-timeline');
 if (miniTimeline) {
-  miniTimeline.innerHTML = ['gitlab-ci', 'emudhra', 'node', 'edk'].map(id => {
+  miniTimeline.innerHTML = ['gitlab-ci', 'emudhra', 'node', 'binance'].map(id => {
     const item = cases.find(entry => entry.id === id);
     return `<a class="mini-event" href="${base}pages/investigacao.html#${id}"><time datetime="${item.date}">${item.date.slice(8)} <span>OUT</span></time><span class="mini-dot" aria-hidden="true"></span><h3>${h(item.shortTitle)}</h3><p>${h(item.evidence)}</p><span class="mini-arrow" aria-hidden="true">↗</span></a>`;
   }).join('');

@@ -1,6 +1,6 @@
 # Outubro Negro · DB1
 
-Especial editorial em português brasileiro sobre vulnerabilidades e incidentes de segurança divulgados ou atualizados em **outubro de 2026**, com corte de pesquisa em **29/10/2026**.
+Especial editorial em português brasileiro sobre vulnerabilidades e incidentes de segurança ocorridos ou divulgados em **outubro de 2026**. O recorte dos acontecimentos termina em outubro; fontes e atualizações posteriores foram verificadas até **06/11/2026**.
 
 ## Executar
 
@@ -18,12 +18,12 @@ Alternativa, com Python 3: `python3 -m http.server 8000 --bind 127.0.0.1`. O ser
 
 - `index.html`: panorama editorial, diagrama de infraestrutura, destaques, cronologia resumida e acesso às demais páginas.
 - `pages/cronologia.html`: busca por termo/CVE, filtros combináveis de categoria e datas, referências e estados de evidência.
-- `pages/investigacao.html`: 16 dossiês com exposição, versões corrigidas, ações defensivas, fontes e ressalvas.
+- `pages/investigacao.html`: 17 dossiês com exposição, versões corrigidas, ações defensivas, fontes e ressalvas, além de um comparativo entre Binance e Serpro.
 - `pages/inteligencia-artificial.html`: papel documentado da IA, ferramentas e limites das alegações.
 - `pages/fontes.html`: referências primárias, metodologia e limitações.
 - `pages/cyber-challenge.html`: seis cenários fictícios, feedback imediato, pontuação, revisão e reinício.
 
-O recorte inclui Node.js/Brotli e DNS/TLS, PHP, GitLab, NGINX, eMudhra, Oracle, Microsoft, Plex, EDK II, OpenCode/MCP, Railway, Zeabur e LiteLLM. Não pretende enumerar todos os CVEs críticos do mês no mundo. Nem todos os registros têm gravidade formal “crítica”: os rótulos preservam as fontes.
+O recorte inclui Node.js/Brotli e DNS/TLS, PHP, GitLab, NGINX, eMudhra, Oracle, Microsoft, Plex, EDK II, OpenCode/MCP, Railway, Zeabur, LiteLLM e o incidente da Binance. O DDoS mitigado pelo Serpro aparece como contraponto didático, não como vulnerabilidade confirmada. O site não pretende enumerar todos os CVEs críticos do mês no mundo. Nem todos os registros têm gravidade formal “crítica”: os rótulos preservam as fontes.
 
 ## Arquitetura
 

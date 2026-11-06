@@ -1,5 +1,5 @@
 // Fontes usadas nos casos; cada registro guarda ID, autor, título, data, tipo e URL.
-export const verifiedAt = '2026-10-29';
+export const verifiedAt = '2026-11-06';
 export const sources = [
   { id: 'node', publisher: 'Node.js', title: 'Security releases — 21 de outubro', date: '2026-10-21', type: 'Mantenedor', url: 'https://nodejs.org/en/blog/vulnerability/october-2026-security-releases' },
   { id: 'gitlab12', publisher: 'GitLab', title: 'Critical patch: 19.4.2, 19.3.5 e 19.2.8', date: '2026-10-12', type: 'Mantenedor', url: 'https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-4-2-released/' },
@@ -23,6 +23,9 @@ export const sources = [
   { id: 'microsoft', publisher: 'Cyber Centre / Canadá', title: 'Microsoft: boletim mensal e exploração conhecida', date: '2026-10-13', type: 'Agência de segurança', url: 'https://www.cyber.gc.ca/en/alerts-advisories/microsoft-security-advisory-october-2026-monthly-rollup-av26-1038' },
   { id: 'unit42', publisher: 'Unit 42', title: 'PHP2Shell: retratação e atualização de 29/10', date: '2026-10-29', type: 'Pesquisadores', url: 'https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/' },
   { id: 'php-extra', publisher: 'Cyber Centre / Canadá', title: 'PHP: atualização de 27/10 e vetor de sessões', date: '2026-10-27', type: 'Agência de segurança', url: 'https://www.cyber.gc.ca/en/alerts-advisories/al26-026-critical-vulnerabilities-impacting-php-cve-2026-109618-cve-2026-109619' },
+  { id: 'binance-report', publisher: 'Binance', title: 'Incidente de 29 de outubro: constatações preliminares', date: '2026-11-03', type: 'Fornecedor', url: 'https://www.binance.com/pt-BR/blog/comunidade/3229153443759566763' },
+  { id: 'fbi-binance', publisher: 'FBI', title: 'Atribuição do ataque à atividade TraderTraitor', date: '2026-10-31', type: 'Autoridade pública', url: 'https://www.fbi.gov/investigate/cyber/alerts/2026/north-korea-responsible-for-6-billion-binance-attack' },
+  { id: 'serpro-ddos', publisher: 'Serpro / Convergência Digital', title: 'Volume recorde de DDoS, sem impacto no Gov.br', date: '2026-11-05', type: 'Nota oficial reproduzida', url: 'https://convergenciadigital.com.br/governo/serpro-ultimo-semestre-marcou-o-maior-volume-de-ataques-ddos-da-historia-mas-sem-impacto-no-gov-br/' },
 ];
 // Índice rápido para gerar o link de uma fonte a partir do ID guardado no caso.
 export const sourceById = Object.fromEntries(sources.map(source => [source.id, source]));
