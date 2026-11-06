@@ -78,6 +78,7 @@ for (const scenario of scenarios) check(scenario.choices.length === 3 && Number.
 const htmlFiles = ['index.html', ...(await readdir(path.join(root, 'pages'))).filter(name => name.endsWith('.html')).map(name => `pages/${name}`)];
 for (const filename of htmlFiles) {
   const html = await readFile(path.join(root, filename), 'utf8');
+  check(!html.includes('✳'), `Símbolo decorativo sujeito a emoji: ${filename}`);
   check(html.includes('<html lang="pt-BR">'), `Idioma: ${filename}`);
   check((html.match(/<h1\b/g) || []).length === 1, `Um H1: ${filename}`);
   check(html.includes('id="conteudo"') && html.includes('class="skip-link"'), `Atalho acessível: ${filename}`);
@@ -92,6 +93,7 @@ for (const filename of htmlFiles) {
     }
   }
 }
+check(!(await readFile(path.join(root, 'scripts/challenge.js'), 'utf8')).includes('✳'), 'Desafio sem símbolo sujeito a emoji');
 for (const folder of ['scripts', 'data']) {
   for (const filename of await readdir(path.join(root, folder))) {
     if (/\.(m?js)$/.test(filename)) execFileSync(process.execPath, ['--check', path.join(root, folder, filename)]);

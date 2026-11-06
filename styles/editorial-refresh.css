@@ -235,16 +235,18 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,s
 /* Adjust layouts for tablet and phone widths. */
 @media(max-width:800px) {
   .container { width:calc(100% - 48px); }
-  .hero-grid { min-height:500px; }
-  .hero h1 { font-size:clamp(76px,11vw,105px); }
+  .hero-grid { grid-template-columns:1fr; min-height:0; }
+  .hero-copy { padding:42px 0 0; }
+  .hero h1 { font-size:clamp(76px,16vw,110px); }
   .hero-description,.section-intro p:not(.eyebrow),.page-hero-bottom>p { font-size:16px; }
-  .hero-art { margin-inline:-10px -25px; }
+  .hero-art { width:min(460px,100%); margin:24px auto 10px; justify-self:center; }
   .hero-illustration { min-height:360px; }
   .tech-tag { font-size:13px; padding:9px 13px; }
   .tech-tag small { font-size:10px; }
   .case-grid { gap:12px; }
   .case-card { border-radius:18px; }
   .dossier-body { gap:32px; }
+  .game-banner { grid-template-columns:1fr; gap:25px; }
 }
 @media(max-width:560px) {
   .container { width:calc(100% - 36px); }

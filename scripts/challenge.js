@@ -10,7 +10,7 @@ let state = newGame();
 // Desenha a tela correspondente ao estado: introdução, pergunta ou resultado.
 function render(moveFocus = true) {
   if (state.stage === 'intro') {
-    host.innerHTML = `<div class="game-intro"><div class="game-cross" aria-hidden="true">✳</div><p class="eyebrow">UM TREINO DE SEGURANÇA</p><h2 id="game-title" tabindex="-1">Seu próximo passo<br>faz diferença.</h2><p>Leia cada situação, escolha o que faria e descubra como essa decisão ajuda a proteger pessoas e computadores.</p><div class="game-facts"><span>6 situações inventadas</span><span>1 a 3 minutos</span><span>Até 600 pontos</span></div><button class="button button-orange" data-action="start">Começar <span aria-hidden="true">↗</span></button><p class="caption">Sem cronômetro. Nenhum comando ou acesso à internet é necessário.</p></div>`;
+    host.innerHTML = `<div class="game-intro"><p class="eyebrow">UM TREINO DE SEGURANÇA</p><h2 id="game-title" tabindex="-1">Seu próximo passo<br>faz diferença.</h2><p>Leia cada situação, escolha o que faria e descubra como essa decisão ajuda a proteger pessoas e computadores.</p><div class="game-facts"><span>6 situações inventadas</span><span>1 a 3 minutos</span><span>Até 600 pontos</span></div><button class="button button-orange" data-action="start">Começar <span aria-hidden="true">↗</span></button><p class="caption">Sem cronômetro. Nenhum comando ou acesso à internet é necessário.</p></div>`;
   } else if (state.stage === 'result') {
     const correct = state.answers.filter(answer => answer.correct).length;
     const title = correct === scenarios.length ? 'Defesa bem fundamentada.' : correct >= 4 ? 'Você está construindo uma boa defesa.' : 'Toda boa defesa começa com treino.';
