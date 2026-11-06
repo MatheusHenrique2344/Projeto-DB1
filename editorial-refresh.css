@@ -276,7 +276,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,s
   .case-card>p:not(.eyebrow) { font-size:15px; }
   .game-banner { padding:28px; border-radius:22px; }
   .game-banner h2 { font-size:40px; }
-  .game-banner .banner-cross { right:14px; top:14px; font-size:110px; }
+  .game-banner .banner-cross { display:none; }
   .page-hero { padding-block:42px; }
   .page-hero h1 { font-size:clamp(43px,12vw,58px); }
   .page-hero-bottom>p { font-size:16px; }
